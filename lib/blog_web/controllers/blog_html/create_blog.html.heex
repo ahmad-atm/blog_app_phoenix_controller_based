@@ -1,0 +1,6 @@
+<p class="flex items-center justify-center text-lg text-gray-700 font-bold">Add New Blog</p>
+<.form for={@form} :let={f} action={"/save_blog"}>
+	<.input field={f[:title]} placeholder="Blog Title"/>
+	<.input type="textarea" field={f[:body]} placeholder="Blog Text" />
+	<button type="submit" class="bg-blue-600 p-3 rounded-lg mt-5 w-full hover:bg-blue-400 hover:text-gray-800">Save Blog</button>
+</.form>

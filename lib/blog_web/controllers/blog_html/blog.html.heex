@@ -1,0 +1,8 @@
+<p class="text-gray-800 font-semibold border-b-2 border-gray-300 mb-7"> <%= @blog.title %> </p>
+
+<p class="text-gray-800 font-medium"> <%= @blog.body %> </p>
+
+<div class="flex mt-5 px-5">
+	<.link class="bg-blue-600 p-3 rounded-lg flex items-center justify-center mr-7 hover:bg-blue-400" href={"/update_blog/#{@blog.id}"}>Update Blog</.link>
+	<.link class="bg-red-600 p-3 rounded-lg flex items-center justify-center hover:bg-red-400" href={"/delete_blog/#{@blog.id}"}>Delete Blog</.link>
+</div>

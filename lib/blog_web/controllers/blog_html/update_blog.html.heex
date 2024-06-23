@@ -1,0 +1,6 @@
+<.form for={@changeset} :let={f} action={"/save_updated_blog"}>
+	<.input type="hidden" field={f[:id]} value={@blog.id} />
+	<.input field={f[:title]} placeholder="Blog Name" required value={@blog.title} />
+	<.input type="textarea" field={f[:body]} placeholder="Blog Body" required value={@blog.body} />
+	<button type="submit" class="bg-blue-600 p-3 rounded-lg mt-5 w-full hover:bg-blue-400 hover:text-gray-800">Update Blog</button>	
+</.form>
